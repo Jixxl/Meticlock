@@ -33,11 +33,11 @@ module CliTools
 end
 
 def fuck_off(s)
-  print (s).fuck_off
+  print fuck_off.(s)
 end
 
 def fuck_off_meti
-  fuck_off.gen_logo
+  put fuck_off.gen_logo
 end  
 =begin MARKING
 
@@ -68,5 +68,6 @@ With this in mind, try to correct fuck_off so that it prints both 's' and 'fuck 
 HINT: You'll have to use the word 'print' or 'puts' twice.
 
 BONUS: What's the difference between print and puts?
+print prints something to CMD, put combines things together to reduce memory.
 
 =end 
