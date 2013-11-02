@@ -1,5 +1,5 @@
 Welcomes user to program. 
- Display tabs of the program
+ Display tabs of the program.
   Exit tab: exits the app
   *Active alarms tab: Allows the user to change settings.
   Alarm set tab:
@@ -14,3 +14,12 @@ Welcomes user to program.
       Takes user through the stages of selection.
       Time set -> How many questions -> Difficulty.
         Prints their new selected settings.
+
+---IMPLEMENTATION---
+
+Welcomes user to program: Does this happen only the first time the program is run? 
+If so, how do we implement that check?
+
+Tabs: |(A)CTIVE ALARMS| |(S)ET ALARMS| |(O)PTIONS| |(E)XIT|
+
+How is difficulty scaled? How do we decide what questions are difficult and what are easy? 
