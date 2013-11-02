@@ -22,8 +22,8 @@ module CliTools
   end
 
 <<<<<<< HEAD
-  def gen_logo.put_each 
-    print <<-meticlock
+  def gen_logo 
+    put_each <<-meticlock
                _|_   o     |         |    
     .--.--. .-. |    .  .- | .-.  .- |.-. 
     |  |  |(.-' |    | (   |(   )(   |-.' 
@@ -32,6 +32,13 @@ module CliTools
   end
 end
 
+def fuck_off(s)
+  print "Fuck Off"
+end
+
+def fuck_off_meti
+  fuck_off
+end  
 =begin MARKING
                                         
 Still not there. There's still something in there that we don't need, and you're using dot notation a little
