@@ -18,7 +18,8 @@ end
 
 # TASK: Write a method here that does the same as 'put_each', but also makes two new lines 
 # afterwards. Call it self.put_each_nl
-def self.put_each_n1(s)
+
+def \n\n self.put_each_n|(s)
     s.each_char do |c|
      putc c; sleep(0.025); STDOUT.flush
     end
