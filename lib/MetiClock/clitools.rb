@@ -27,9 +27,9 @@ def self.put_each_nl(s)
   end
   
 # TASK 2: Write a method here, called gen_logo, that uses 'put_each' to print the following text:
-=begin
+#=begin
 
-def gen_logo = put_each
+def put_each = gen_logo
   put """
  __    __     ______     ______   __     ______     __         ______     ______     __  __    
 /\ "-./  \   /\  ___\   /\__  _\ /\ \   /\  ___\   /\ \       /\  __ \   /\  ___\   /\ \/ /    
@@ -39,7 +39,7 @@ def gen_logo = put_each
 
 """
 
-=end # Ignore the begin and end.
+#=end # Ignore the begin and end.
 
 =begin
                                           MARKING
