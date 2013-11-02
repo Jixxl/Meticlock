@@ -22,12 +22,8 @@ module CliTools
   end
 
 <<<<<<< HEAD
-  def self.gen_logo 
-    put_each <<-meticlock
-=======
   def gen_logo.put_each 
     print <<-meticlock
->>>>>>> f3c4ebb208ff0807568f66811b2774fc066cdde3
                _|_   o     |         |    
     .--.--. .-. |    .  .- | .-.  .- |.-. 
     |  |  |(.-' |    | (   |(   )(   |-.' 
@@ -38,17 +34,34 @@ end
 
 =begin MARKING
                                         
-Almost there! You're still overthinking gen_logo, however. Look at how we use puts
-inside put_each_nl. Now, look at how you're using put_each inside gen_logo.
+Still not there. There's still something in there that we don't need, and you're using dot notation a little
+weirdly there.
 
-Remember, they're both methods that take a string.
-We could type
-puts 'hi!'
-or
-put_each 'hi!'
-and both would work. The only difference is that we wrote put_each, and that 
-puts comes with ruby.
+I think we're going to make it a habit that if you miss something three or so times I'll show you the right 
+way to do it. No-one likes getting stuck in place.
 
-With this in mind, there's something extra in gen_logo we don't need. Can you spot it?
+With that in mind, here's the correct method:
+
+  def gen_logo
+    put_each <<-meticlock
+               _|_   o     |         |    
+    .--.--. .-. |    .  .- | .-.  .- |.-. 
+    |  |  |(.-' |    | (   |(   )(   |-.' 
+    '  '  `-`--'`-'-' `-`-'`-`-'  `-''  `-                                       
+    meticlock
+  end
+end
+
+See the difference? We can use put_each as if it was print, because both methods take strings as their parameters.
+
+Perhaps this is a good point to hammer this point home. Write a new method, called fuck_off, that prints a string
+'s', and prints 'fuck off' after it.
+
+I'll get you started:
+def fuck_off(s)
+
+
+Once you've got this method made, make another method, fuck_off_meti, that prints our logo using fuck_off 
+instead of put_each.
 
 =end 
