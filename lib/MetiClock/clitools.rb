@@ -15,14 +15,14 @@ module CliTools
   end
 
   def self.put_each_nl(s)
-      s.each_char do |c|
-       putc c; sleep(0.025); STDOUT.flush
-       puts "\n\n"
-      end
+    s.each_char do |c|
+      putc c; sleep(0.025); STDOUT.flush
+      puts "\n\n"
+    end
   end
 
-  def gen_logo 
-    put_each print <<-meticlock
+  def self.gen_logo 
+    put_each <<-meticlock
                _|_   o     |         |    
     .--.--. .-. |    .  .- | .-.  .- |.-. 
     |  |  |(.-' |    | (   |(   )(   |-.' 
