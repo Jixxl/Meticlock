@@ -44,18 +44,11 @@ def self.put_each_nl(s)
 =begin
                                           MARKING
 
-Well done! You've started to correct both the errors in self.put_each_nl
+Good job! That method is now working correctly, and it's something we'll use in the program later.
 
-However, there is a problem with the positioning of \n\n. At the moment, it is before the rest 
-of the code. Is that where I asked it to go?
-
-Here's a little tip: whenever we want to puts anything, anything at all, it must be 
-inside speech marks.
-
-By the way, it's up to you to collect these markings as and when you want, and save them
-where you want. I'm not going to build tutorial files for you; we'll learn by doing,
-like this.
-
-NEXT: FIX put_each_nl
-
+NEXT: ATTEMPT TASK 2
+Current problems:
+  It's inside a comment.
+  You're comparing two methods for equality in a method definition (why?)
+  You aren't using put_each in your new code properly.
 =end
