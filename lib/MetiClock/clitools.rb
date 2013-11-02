@@ -6,8 +6,7 @@ module CliTools
     s.each_char do |c|
      putc c; sleep(0.025); STDOUT.flush
     end
-  end
-  
+  end  
   
   def self.draw_tabs
     print <<-this
@@ -19,7 +18,7 @@ end
 # TASK: Write a method here that does the same as 'put_each', but also makes two new lines 
 # afterwards. Call it self.put_each_nl
 
-# TASK 2: Write a method here, called gen_logo, that uses 'put_each' to print the following text:
+# TASK 2: Write a method here, called self.gen_logo, that uses 'put_each' to print the following text:
 =begin
  __    __     ______     ______   __     ______     __         ______     ______     __  __    
 /\ "-./  \   /\  ___\   /\__  _\ /\ \   /\  ___\   /\ \       /\  __ \   /\  ___\   /\ \/ /    
