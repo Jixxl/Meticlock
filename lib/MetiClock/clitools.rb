@@ -44,24 +44,24 @@ def put_each = gen_logo
 =begin
                                           MARKING
 
-Well done. You're no longer comparing two methods for equality, but rather using a single equals 
-correctly. However, you're still using put_each inside this method wrong. 
+You're making progress. You've also commented out the =begin and =end which was actually pretty
+clever, so well done. I was just expecting you to move the method.
 
-Lets look at put_each_nl for a second. Look at how you use another method -- puts -- inside this
-method to get the result you want.
+Still a few problems here:
+  1) Unfortunately, while the """ syntax works in some languages, it doesn't in Ruby.
+  When we want to print multiple things in ruby, we do it like this:
+    print <<-WORD
+      what we want to print
+    WORD
 
-Imagine put_each was puts in gen_logo. Where would you put it? How would you use it if you just 
-wanted to puts the text?
+  If you want an example of this, look at draw_tabs.
 
-Further, the function is STILL inside a comment. Remember, comments start like this
-'=begin'
-and end like this
-'=end'
-and anything between them is ignored at runtime.
+  2) Remember the only thing that goes after the 'def' at the start of the method is the method name
+  or any method parameters (such as 's' above.) YOU CANNOT DO ANYTHING ELSE ON THAT LINE.
 
-NEXT: ATTEMPT TASK 2
-Current problems:
-  It's inside a comment.
-  You're comparing two methods for equality in a method definition (why?)
-  You aren't using put_each in your new code properly.
+  3) You're now naming that method put_each rather than gen_logo.
+
+  4) Look again at how we use puts inside put_each_nl. What's stopping you from using put_each 
+  inside gen_logo in the same way?
+  
 =end
