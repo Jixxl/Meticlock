@@ -29,15 +29,15 @@ def self.put_each_nl(s)
 # TASK 2: Write a method here, called gen_logo, that uses 'put_each' to print the following text:
 #=begin
 
-def put_each = gen_logo
-  put """
+  def gen_logo 
+  put_each print <<-meticlock
  __    __     ______     ______   __     ______     __         ______     ______     __  __    
 /\ "-./  \   /\  ___\   /\__  _\ /\ \   /\  ___\   /\ \       /\  __ \   /\  ___\   /\ \/ /    
 \ \ \-./\ \  \ \  __\   \/_/\ \/ \ \ \  \ \ \____  \ \ \____  \ \ \/\ \  \ \ \____  \ \  _"-.  
  \ \_\ \ \_\  \ \_____\    \ \_\  \ \_\  \ \_____\  \ \_____\  \ \_____\  \ \_____\  \ \_\ \_\ 
   \/_/  \/_/   \/_____/     \/_/   \/_/   \/_____/   \/_____/   \/_____/   \/_____/   \/_/\/_/ 
 
-"""
+  meticlock
 
 #=end # Ignore the begin and end.
 
