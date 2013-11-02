@@ -37,7 +37,7 @@ def fuck_off(s)
 end
 
 def fuck_off_meti
-  fuck_off
+  fuck_off.gen_logo
 end  
 =begin MARKING
                                         
