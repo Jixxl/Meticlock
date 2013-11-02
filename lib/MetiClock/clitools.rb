@@ -33,7 +33,7 @@ module CliTools
 end
 
 def fuck_off(s)
-  print "Fuck Off"
+  print (s).fuck_off
 end
 
 def fuck_off_meti
@@ -59,5 +59,6 @@ What I'd get at the moment is:
 -------
 
 Can you also explain to me what you think the '.' character does? For instance, here? 'fuck_off.gen_logo'
+links two things together so in this case will print bother fuck_off and gen_logo
 
 =end 
