@@ -1,4 +1,0 @@
-Meticlock
-=========
-
-Maths alarm clock
