@@ -33,11 +33,13 @@ module CliTools
 end
 
 def fuck_off(s)
-  print fuck_off.(s)
+  puts s
+  puts 'fuck off'
 end
 
 def fuck_off_meti
-  put fuck_off.gen_logo
+  CliTools.put_each
+  CliTools.fuck_off
 end  
 =begin MARKING
 
@@ -55,9 +57,9 @@ I can see why you think the above code would work, and it does make a sort of se
 
 Unfortunately what I was looking for was this:
 
-def fuck_off(s)
-  puts s
-  puts 'fuck off'
+def fuck_off(s)       <-
+  puts s                |
+  puts 'fuck off'    <---- that was my next guess.
 end
 
 That would print the method parameter - s - and 'fuck off', just like we originally wanted.
