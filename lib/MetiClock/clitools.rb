@@ -44,23 +44,18 @@ def self.put_each_nl(s)
 =begin
                                           MARKING
 
-'=begin' and '=end' delimit comments. That means that the method you wrote up above was inside 
-a comment, and thus will be ignored during compilation, just like this text.
+Well done! You've started to correct both the errors in self.put_each_nl
 
-self.put_each_n| is still named wrong. Look again at what I wanted it to be called. 
-It's important to get characters right in coding.
+However, there is a problem with the positioning of \n\n. At the moment, it is before the rest 
+of the code. Is that where I asked it to go?
 
-This code won't compile -- you should be able to test that yourself. 
+Here's a little tip: whenever we want to puts anything, anything at all, it must be 
+inside speech marks.
 
-The line starting with 'def' is called a method definition. 
-All it does is give a name to a method.
-Thus, putting \n\n here will do nothing but break the code.
+By the way, it's up to you to collect these markings as and when you want, and save them
+where you want. I'm not going to build tutorial files for you; we'll learn by doing,
+like this.
 
-All code that runs inside a method must go after the method definition and before 
-the 'end' of that method. 
-
-See if you can put \n\n in the right place. HINT: You will need to use another method
-inside this method to print those two characters to the screen. Can you remember what it is?
-
+NEXT: FIX put_each_nl
 
 =end
