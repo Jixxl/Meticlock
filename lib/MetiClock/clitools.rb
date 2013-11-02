@@ -21,8 +21,8 @@ end
 
 def self.put_each_nl(s)
     s.each_char do |c|
-     puts \n\n
      putc c; sleep(0.025); STDOUT.flush
+     puts "\n\n"
     end
   end
   
