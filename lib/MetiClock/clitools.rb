@@ -41,33 +41,37 @@ def fuck_off_meti
 end  
 =begin MARKING
 
-Ah, I see the problem.
-
-In any programming language -- not just Ruby -- the '.' (we call this dot notation) represents an apostrophe.
-
-The code above is held together in a module, called CliTools. You don't need to worry about what a module
-is right now -- all it does is hold methods together in a group.
-
-Let's say I wanted to call fuck_off from another file in our project. To do this, I'd type:
-
-CliTools.fuck_off
-
-In English, that would read 'CliTool's fuck_off'
-
-Similarly, if I had a method 'attack' in a class 'Sword', I could call it like so:
-
-Sword's Attack -> 'Sword.attack'
-
-Now let's look at what your code above means:
-
-print (s)'s fuck_off
-
-That doesn't make sense. 's' doesn't have a method called fuck_off -- at least, not one we've written.
-
-With this in mind, try to correct fuck_off so that it prints both 's' and 'fuck off'. 
-HINT: You'll have to use the word 'print' or 'puts' twice.
-
 BONUS: What's the difference between print and puts?
 print prints something to CMD, put combines things together to reduce memory.
 
+That was a wild guess and you know it. Although to be honest, that is a decent concept, but we'll come to that later.
+
+puts prints a message and then starts a new line.
+print doesn't start a new line.
+That's all there is to it!
+
+I said you'd have to use the word print or puts twice in the above function. 
+I can see why you think the above code would work, and it does make a sort of sense.
+
+Unfortunately what I was looking for was this:
+
+def fuck_off(s)
+  puts s
+  puts 'fuck off'
+end
+
+That would print the method parameter - s - and 'fuck off', just like we originally wanted.
+
+For example, fuck_off('now') would result in:
+
+'now'
+'fuck off'
+
+Remember what we're trying to do in fuck_off_meti. We're trying to print that meticlock logo using
+our fuck_off method.
+
+Don't overthink it. Currently, gen_logo prints using the 'put_each' method.
+What you need to do is write a copy of that method, give it the right name, and make it print using the
+'fuck_off' method.
+ 
 =end 
