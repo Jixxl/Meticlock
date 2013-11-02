@@ -40,35 +40,24 @@ def fuck_off_meti
   fuck_off.gen_logo
 end  
 =begin MARKING
-                                        
-Still not there. There's still something in there that we don't need, and you're using dot notation a little
-weirdly there.
 
-I think we're going to make it a habit that if you miss something three or so times I'll show you the right 
-way to do it. No-one likes getting stuck in place.
+fuck_off is taking (s) as a parameter, but is doing nothing with it. Look at what I initially asked you to do:
 
-With that in mind, here's the correct method:
+"Write a new method, called fuck_off, that prints a string 's', and prints 'fuck off' after it."
 
-  def gen_logo
-    put_each <<-meticlock
-               _|_   o     |         |    
-    .--.--. .-. |    .  .- | .-.  .- |.-. 
-    |  |  |(.-' |    | (   |(   )(   |-.' 
-    '  '  `-`--'`-'-' `-`-'`-`-'  `-''  `-                                       
-    meticlock
-  end
-end
+To demonstrate this, let's say I wrote fuck_off("hi!")
 
-See the difference? We can use put_each as if it was print, because both methods take strings as their parameters.
+What I'd want back from that is:
 
-Perhaps this is a good point to hammer this point home. Write a new method, called fuck_off, that prints a string
-'s', and prints 'fuck off' after it.
+'Hi!'
+'Fuck Off'
 
-I'll get you started:
-def fuck_off(s)
+What I'd get at the moment is:
 
+'Fuck Off'
 
-Once you've got this method made, make another method, fuck_off_meti, that prints our logo using fuck_off 
-instead of put_each.
+-------
+
+Can you also explain to me what you think the '.' character does? For instance, here? 'fuck_off.gen_logo'
 
 =end 
