@@ -21,8 +21,8 @@ module CliTools
       end
   end
 
-  def gen_logo 
-    put_each print <<-meticlock
+  def gen_logo.put_each 
+    print <<-meticlock
                _|_   o     |         |    
     .--.--. .-. |    .  .- | .-.  .- |.-. 
     |  |  |(.-' |    | (   |(   )(   |-.' 
