@@ -39,3 +39,27 @@ def \n\n self.put_each_n|(s)
 """
 
 =end # Ignore the begin and end.
+
+=begin
+                                          MARKING
+
+'=begin' and '=end' delimit comments. That means that the method you wrote up above was inside 
+a comment, and thus will be ignored during compilation, just like this text.
+
+self.put_each_n| is still named wrong. Look again at what I wanted it to be called. 
+It's important to get characters right in coding.
+
+This code won't compile -- you should be able to test that yourself. 
+
+The line starting with 'def' is called a method definition. 
+All it does is give a name to a method.
+Thus, putting \n\n here will do nothing but break the code.
+
+All code that runs inside a method must go after the method definition and before 
+the 'end' of that method. 
+
+See if you can put \n\n in the right place. HINT: You will need to use another method
+inside this method to print those two characters to the screen. Can you remember what it is?
+
+
+=end
