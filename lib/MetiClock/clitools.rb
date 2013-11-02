@@ -41,24 +41,32 @@ def fuck_off_meti
 end  
 =begin MARKING
 
-fuck_off is taking (s) as a parameter, but is doing nothing with it. Look at what I initially asked you to do:
+Ah, I see the problem.
 
-"Write a new method, called fuck_off, that prints a string 's', and prints 'fuck off' after it."
+In any programming language -- not just Ruby -- the '.' (we call this dot notation) represents an apostrophe.
 
-To demonstrate this, let's say I wrote fuck_off("hi!")
+The code above is held together in a module, called CliTools. You don't need to worry about what a module
+is right now -- all it does is hold methods together in a group.
 
-What I'd want back from that is:
+Let's say I wanted to call fuck_off from another file in our project. To do this, I'd type:
 
-'Hi!'
-'Fuck Off'
+CliTools.fuck_off
 
-What I'd get at the moment is:
+In English, that would read 'CliTool's fuck_off'
 
-'Fuck Off'
+Similarly, if I had a method 'attack' in a class 'Sword', I could call it like so:
 
--------
+Sword's Attack -> 'Sword.attack'
 
-Can you also explain to me what you think the '.' character does? For instance, here? 'fuck_off.gen_logo'
-links two things together so in this case will print bother fuck_off and gen_logo
+Now let's look at what your code above means:
+
+print (s)'s fuck_off
+
+That doesn't make sense. 's' doesn't have a method called fuck_off -- at least, not one we've written.
+
+With this in mind, try to correct fuck_off so that it prints both 's' and 'fuck off'. 
+HINT: You'll have to use the word 'print' or 'puts' twice.
+
+BONUS: What's the difference between print and puts?
 
 =end 
