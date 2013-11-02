@@ -15,3 +15,7 @@ module CliTools
     this
   end
 end
+
+# TASK: Write a method here that does the same as 'put_each', but also makes two new lines 
+# afterwards. Call it put_each_nl.
+
