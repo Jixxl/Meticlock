@@ -44,7 +44,20 @@ def gen_logo = put_each
 =begin
                                           MARKING
 
-Good job! That method is now working correctly, and it's something we'll use in the program later.
+Well done. You're no longer comparing two methods for equality, but rather using a single equals 
+correctly. However, you're still using put_each inside this method wrong. 
+
+Lets look at put_each_nl for a second. Look at how you use another method -- puts -- inside this
+method to get the result you want.
+
+Imagine put_each was puts in gen_logo. Where would you put it? How would you use it if you just 
+wanted to puts the text?
+
+Further, the function is STILL inside a comment. Remember, comments start like this
+'=begin'
+and end like this
+'=end'
+and anything between them is ignored at runtime.
 
 NEXT: ATTEMPT TASK 2
 Current problems:
