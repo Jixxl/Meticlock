@@ -1,1 +1,16 @@
-_spec
+Welcomes user to program. 
+ Display tabs of the program
+  Exit tab: exits the app
+  *Active alarms tab: Allows the user to change settings.
+  Alarm set tab:
+    Asks user to set a time for the alarm.
+      Asks user how many questions they want to be asked. (Maths questions ofc)
+        Asks user to what degree of difficulty the questions should be set to.
+          Program sets and lets the user know what options they have set -> Takes user back to Main Page.
+  
+  *Active alarms tab: Allows user to modify or cancel alarm.
+    Cancel alarm tab: Allows the user to simply void the code set earlier and to delete it from the program.
+    Modify tab: Modifies the code to the new settings.
+      Takes user through the stages of selection.
+      Time set -> How many questions -> Difficulty.
+        Prints their new selected settings.
