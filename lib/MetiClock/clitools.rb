@@ -37,8 +37,8 @@ def fuck_off(s)
 end
 
 def fuck_off_meti
-  CliTools.put_each
-  CliTools.fuck_off
+  put_each.meticlock 
+  print fuck_off(s)
 end  
 =begin MARKING
 
