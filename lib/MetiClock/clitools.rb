@@ -21,7 +21,6 @@ module CliTools
     end
   end
 
-<<<<<<< HEAD
   def gen_logo 
     put_each <<-meticlock
                _|_   o     |         |    
@@ -43,37 +42,26 @@ def fuck_off_meti
 end  
 =begin MARKING
 
-BONUS: What's the difference between print and puts?
-print prints something to CMD, put combines things together to reduce memory.
+Good try. Couple of notes here:
 
-That was a wild guess and you know it. Although to be honest, that is a decent concept, but we'll come to that later.
+1) We don't need to name the module/class in our method calls if the method is already within that container.
+So, if we wanted to call 'put_each' from another file, CliTools.put_each would indeed be correct.
+Here, however, we can simply type 'put_each', as the method is defined within the same module.
 
-puts prints a message and then starts a new line.
-print doesn't start a new line.
-That's all there is to it!
+2) You're getting the right idea about mixing functions together within other functions to get the desired
+result -- sweet. Let's look at what fuck_off_meti is doing at the moment:
 
-I said you'd have to use the word print or puts twice in the above function. 
-I can see why you think the above code would work, and it does make a sort of sense.
+line 41: CliTools.put_each (this is calling a method, but passing no parameter to it. Instead of typing
+'put_each' and then what you want printed, you are typing nothing afterwards. As a result, this method
+will do nothing. 
 
-Unfortunately what I was looking for was this:
+line 42: CliTools.fuck_off (this method again has no parameters passed to it. This will again do nothing. 
+Remember, we need to specify what fuck_off is printing -- s -- before it'll run correctly. For instance,
+fuck_off('hi!') would work, as s = 'hi!', but calling fuck_off with no parameters will not, as s = nothing.
 
-def fuck_off(s)       <-
-  puts s                |
-  puts 'fuck off'    <---- that was my next guess.
-end
+Let's look again at what we want fuck_off_meti to do. We want it to print the meticlock logo using the
+fuck_off method to print. See if you can implement that in the code. 
 
-That would print the method parameter - s - and 'fuck off', just like we originally wanted.
-
-For example, fuck_off('now') would result in:
-
-'now'
-'fuck off'
-
-Remember what we're trying to do in fuck_off_meti. We're trying to print that meticlock logo using
-our fuck_off method.
-
-Don't overthink it. Currently, gen_logo prints using the 'put_each' method.
-What you need to do is write a copy of that method, give it the right name, and make it print using the
-'fuck_off' method.
+You're doing well.
  
 =end 
