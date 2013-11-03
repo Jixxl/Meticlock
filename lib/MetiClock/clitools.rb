@@ -37,8 +37,8 @@ def fuck_off(s)
 end
 
 def fuck_off_meti
-  put_each.meticlock 
-  print fuck_off(s)
+  put_each (meticlock)(s) 
+  print fuck_off
 end 
 
 =begin MARKING
@@ -155,6 +155,9 @@ so if we typed put_each('meticlock'), this would work, and would print the word 
 I appreciate this is a lot to take in.
 It's OK to struggle a bit here.
 What we want to do is print the whole logo inside fuck_off_meti, by calling our fuck_off method,
-and passing the logo as a parameter. See if you can work out how to do this.
+and passing the logo as a parameter. See if you can work out how to do this. 
+
+
+*********How do you call a method?*************
 
 =end 
